@@ -1,7 +1,7 @@
 import time
 
 from generator.generator import generated_person
-from locators.elements_page_locators import TextBoxPageLocators
+from locators.elements_page_locators import TextBoxPageLocators, RadioButtonPageLocators
 from pages.base_page import BasePage
 
 
