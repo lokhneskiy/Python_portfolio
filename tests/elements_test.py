@@ -1,6 +1,6 @@
 import time
 
-from pages.elements_page import TextBoxPage
+from pages.elements_page import TextBoxPage, RadioButtonPage
 
 
 class TestElements:
@@ -15,6 +15,23 @@ class TestElements:
             assert email == output_email, "the email does not match"
             assert current_address == output_cur_addr, "the current address does not match"
             assert permanent_address == output_per_addr, "the permanent address does not match"
+
+            
+     
+class TestRadioButton:
+
+        def test_radio_button(self, driver):
+            radio_button_page = RadioButtonPage(driver, 'https://demoqa.com/radio-button')
+            radio_button_page.open()
+            radio_button_page.click_on_the_radio_button('yes')
+            output_yes = radio_button_page.get_output_result()
+            radio_button_page.click_on_the_radio_button('impressive')
+            output_impressive = radio_button_page.get_output_result()
+            radio_button_page.click_on_the_radio_button('no')
+            output_no = radio_button_page.get_output_result()
+            assert output_yes == 'Yes', "'Yes' have not been selected"
+            assert output_impressive == 'Impressive', "'Impressive' have not been selected"
+            assert output_no == "No", "'No' have not been selected
 
 
 
