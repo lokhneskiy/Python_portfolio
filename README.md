@@ -1,4 +1,4 @@
-                                            **My Python_portfolio**
+**My Python_portfolio**
 
 My portfolio in which I touched on a couple of aspects of automated testing:
 ______________
