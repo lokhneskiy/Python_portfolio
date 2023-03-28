@@ -1,4 +1,5 @@
 import time
+import random
 
 class TextBoxPage(BasePage):
     locators = TextBoxPageLocators()
