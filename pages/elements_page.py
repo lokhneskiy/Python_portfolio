@@ -1,6 +1,14 @@
 import time
 import random
 
+from selenium.webdriver.common.by import By
+
+from generator.generator import generated_person
+from locators.elements_page_locators import TextBoxPageLocators, CheckBoxPageLocators, RadioButtonPageLocators, \
+    WebTablePageLocators, ButtonsPageLocators
+from pages.base_page import BasePage
+
+
 class TextBoxPage(BasePage):
     locators = TextBoxPageLocators()
 
